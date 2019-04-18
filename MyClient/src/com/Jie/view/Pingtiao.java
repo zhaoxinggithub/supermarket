@@ -7,11 +7,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.ibm.icu.text.SimpleDateFormat;
+//import com.ibm.icu.text.SimpleDateFormat;
 
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
@@ -47,7 +48,7 @@ public class Pingtiao extends JFrame {
 		
 		//格式化时间操作
 		Date d =new Date();
-		SimpleDateFormat d2=new SimpleDateFormat("yyyy MM dd HH mm ss"); 
+		SimpleDateFormat d2=new SimpleDateFormat("yyyy MM dd HH mm ss");
 		JLabel lblNewLabel = new JLabel(d2.format(d));
 		lblNewLabel.setBounds(85, 10, 204, 21);
 		contentPane.add(lblNewLabel);
